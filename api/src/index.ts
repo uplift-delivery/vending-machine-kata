@@ -3,6 +3,10 @@ import express from 'express';
 const app = express();
 const port = 3000;
 
+app.get( "/healthcheck", ( req, res ) => {
+    res.send( {"test": true});
+} );
+
 app.get( "/", ( req, res ) => {
     res.send( {"test": true});
 } );
