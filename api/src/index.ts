@@ -7,8 +7,8 @@ app.get( "/healthcheck", ( req, res ) => {
     res.send( {"test": true});
 } );
 
-app.get( "/", ( req, res ) => {
-    res.send( {"test": true});
+app.get( "/displayText", ( req, res ) => {
+    res.send( {"text": "INSERT COIN"});
 } );
 
 app.post( "/", ( req, res ) => {
